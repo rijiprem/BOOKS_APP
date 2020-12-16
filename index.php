@@ -15,7 +15,7 @@
        </tr>
        <tr>
            <td>AUTHOR</td>
-           <td><inpu class="form-control"></inpu></td>
+           <td><input class="form-control"></input></td>
        </tr>
        <tr>
            <td>PUBLISHER</td>
