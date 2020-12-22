@@ -11,28 +11,42 @@
    <table class="table table-borderless">
        <tr>
            <td>BOOK NAME</td>
-           <td><input type="text" class="form-control"></td>
+           <td><input id="bname" type="text" class="form-control"></td>
        </tr>
        <tr>
            <td>AUTHOR</td>
-           <td><input class="form-control"></input></td>
+           <td><input id="author" class="form-control"></input></td>
        </tr>
        <tr>
            <td>PUBLISHER</td>
-           <td><input type="text" class="form-control"></td>
+           <td><input id="publisher" type="text" class="form-control"></td>
        </tr>
        <tr>
            <td>DISTRIBUTER</td>
-           <td><input type="text" class="form-control"></td>
+           <td><input id="distributer" type="text" class="form-control"></td>
        </tr>
        <tr>
            <td>PRICE</td>
-           <td><input type="text" class="form-control"></td>
+           <td><input id="price" type="text" class="form-control"></td>
        </tr>
        <tr>
            <td></td>
-           <td><button class="btn btn-danger">SUBMIT</button></td>
+           <td><button onclick="mybuttonclick()" class="btn btn-danger">SUBMIT</button></td>
        </tr>
    </table>
+   <script>
+        function mybuttonclick()
+        {
+
+            var getBookName=document.getElementById("bname").value
+            var getAuthorName=document.getElementById("author").value
+            var getPublisherName=document.getElementById("distributer").value
+            var getPrice=document.getElementById("price").value
+            console.log(getBookName)
+            console.log(getAuthorName)
+            console.log(getPublisherName)
+            console.log(getPrice)
+        }
+   </script>
 </body>
 </html>
